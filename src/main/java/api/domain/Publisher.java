@@ -1,5 +1,10 @@
 package api.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "publisher")
 public class Publisher extends BaseModel {
     protected String name;
 
