@@ -12,10 +12,10 @@
 </head>
 <label>
 <h1> Enter Your Crenditials To Log In</h1>
-<labe>USER NAME: </labe><input type="text" name="uname"></label>
-<labe>PASSWORD: </labe><input type="text" name="uname"></label>
+<labe>USER NAME: </labe><input class="name" type="text" name="uname" ></label><br/>
+<labe>PASSWORD: </labe><input classtype="text" name="uname"></label><br/>
 
-<input type="submit" value="Login">
-<input type="checkbox" value="Remember Me">
+<input type="submit" value="Login"><br/>
+<input type="checkbox" value="remember"> Remember Me
 </body>
 </html>
