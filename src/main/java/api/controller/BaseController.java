@@ -9,14 +9,28 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 @WebServlet(name = "BaseController")
-public class BaseController extends HttpServlet {
+public abstract class BaseController extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
         super.init();
 
-        Database.INSTANCE.initialize("app.db");
+        String rootDir = getProjectRootDir();
+
+        Database.INSTANCE.initialize(rootDir + "app.db");
+    }
+
+    protected String getProjectRootDir() {
+        String currentWorkingDir = getServletContext().getRealPath("/");
+        String rootDir = Paths.get(currentWorkingDir)
+                .getParent()
+                .getParent()
+                .getParent()
+                .toString();
+
+        return rootDir;
     }
 }

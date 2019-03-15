@@ -8,6 +8,7 @@
           <element id="module-output" name="onlinebookstore" />
         </element>
         <element id="directory" name="lib">
+<<<<<<< HEAD
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.5" />
@@ -34,6 +35,13 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.25.2" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.21" />
+=======
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.5" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:3.0.0" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+>>>>>>> f7a9245012db804a3e8698f22be239581cf170d8
         </element>
       </element>
     </root>
