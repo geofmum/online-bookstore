@@ -1,4 +1,7 @@
-package controller;
+package api.controller;
+
+import api.providers.Database;
+import io.ebean.EbeanServer;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,11 +12,11 @@ import java.io.IOException;
 
 @WebServlet(name = "BaseController")
 public class BaseController extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-    }
+    @Override
+    public void init() throws ServletException {
+        super.init();
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        Database.INSTANCE.initialize("app.db");
     }
 }

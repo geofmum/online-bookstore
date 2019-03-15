@@ -1,0 +1,4 @@
+
+entity-packages: api.domain
+transactional-packages: api
+querybean-packages: api

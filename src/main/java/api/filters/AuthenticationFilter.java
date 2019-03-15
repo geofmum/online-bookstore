@@ -1,4 +1,4 @@
-package filters;
+package api.filters;
 
 public class AuthenticationFilter {
 }
