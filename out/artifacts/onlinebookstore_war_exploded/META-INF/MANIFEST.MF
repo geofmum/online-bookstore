@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
-Built-By: mabde
+Built-By: geof
 Created-By: IntelliJ IDEA
+<<<<<<< HEAD
 Build-Jdk: 11.0.2
+=======
+Build-Jdk: 11
+>>>>>>> aa3f66cc59e564ab5cc1adabd3b61d6de60446bb
 

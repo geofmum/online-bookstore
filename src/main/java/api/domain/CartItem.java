@@ -1,9 +1,19 @@
 package api.domain;
 
-public class CartItem  extends BaseModel{
-    protected int quantity;
-    protected long book_id;
-    protected long user_id;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "cart_item")
+public class CartItem extends BaseModel {
+    int quantity;
+
+    @OneToOne
+    Book book;
+
+    @OneToOne
+    User user;
 
     public int getQuantity() {
         return quantity;
@@ -13,19 +23,19 @@ public class CartItem  extends BaseModel{
         this.quantity = quantity;
     }
 
-    public long getBook_id() {
-        return book_id;
+    public Book getBook() {
+        return book;
     }
 
-    public void setBook_id(long book_id) {
-        this.book_id = book_id;
+    public void setBook(Book book) {
+        this.book = book;
     }
 
-    public long getUser_id() {
-        return user_id;
+    public User getUser() {
+        return user;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUser(User user) {
+        this.user = user;
     }
 }

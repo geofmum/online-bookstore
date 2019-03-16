@@ -1,13 +1,25 @@
 package api.domain;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Table(name = "book")
 public class Book extends BaseModel {
-    protected String category;
-    protected String ISBN;
-    protected String title;
-    protected long author_id;
-    protected long publisher_id;
-    protected String year;
-    protected double price;
+    String category;
+    String ISBN;
+    String title;
+    String year;
+    double price;
+
+    @ManyToMany(mappedBy = "book")
+    List<Author> authors;
+
+    @ManyToMany(mappedBy = "book")
+    List<Publisher> publishers;
+
+    @OneToOne(mappedBy = "book")
+    CartItem cart_item;
 
     public String getCategory() {
         return category;
@@ -33,20 +45,20 @@ public class Book extends BaseModel {
         this.title = title;
     }
 
-    public long getAuthor_id() {
-        return author_id;
+    public List<Author> getAuthors() {
+        return authors;
     }
 
-    public void setAuthor_id(long author_id) {
-        this.author_id = author_id;
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
     }
 
-    public long getPublisher_id() {
-        return publisher_id;
+    public List<Publisher> getPublishers() {
+        return publishers;
     }
 
-    public void setPublisher_id(long publisher_id) {
-        this.publisher_id = publisher_id;
+    public void setPublishers(List<Publisher> publishers) {
+        this.publishers = publishers;
     }
 
     public String getYear() {

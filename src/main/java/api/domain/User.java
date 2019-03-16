@@ -1,10 +1,21 @@
 package api.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user")
 public class User extends BaseModel {
-    private String name;
-    private String password;
-    private String profile_pic;
-    private long address_id;
+    String name;
+    String password;
+    String profile_pic;
+
+    @OneToOne(mappedBy = "user")
+    Address address;
+
+    @OneToOne(mappedBy = "user")
+    CartItem cart_item;
 
     public String getName() {
         return name;
@@ -30,11 +41,11 @@ public class User extends BaseModel {
         this.profile_pic = profile_pic;
     }
 
-    public long getAddress_id() {
-        return address_id;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAddress_id(long address_id) {
-        this.address_id = address_id;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }

@@ -59,5 +59,7 @@ public abstract class BaseModel extends Model {
     public void setUpdatedAt(Instant updated_at) {
         this.updated_at = updated_at;
     }
+
+
 }
 
