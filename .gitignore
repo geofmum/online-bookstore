@@ -94,3 +94,4 @@ fabric.properties
 .idea/workspace.xml
 .idea/
 src/test/
+app.db

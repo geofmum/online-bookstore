@@ -9,7 +9,8 @@ public class SignUp extends BaseController {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       req.getRequestDispatcher("views/signUp.jsp").forward(req,resp);
+        req.setAttribute("pagename", "signup");
+        req.getRequestDispatcher("views/signUp.jsp").forward(req,resp);
     }
 
     @Override

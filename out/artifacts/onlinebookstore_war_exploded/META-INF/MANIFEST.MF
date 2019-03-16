@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
-Built-By: geof
+Built-By: USER
 Created-By: IntelliJ IDEA
+<<<<<<< HEAD
 Build-Jdk: 11
+=======
+Build-Jdk: 1.8
+>>>>>>> 767bf4902f74efce8028cad1b3e46ae284ea5a4e
 
