@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Lobster|Fredericka+the+Great');
 
 .shopname{
@@ -176,8 +177,20 @@ header{
 .emailName{
     align-content: center;
 }
+
+.address{
+    border: none;
+    border: red;
+    padding: 50px;
+
+}
 .container{
-    max-width: 800px;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
+    border: 10px solid gray;
+}
+
+input[type="submit"]{
+    text-align: center;
 }
