@@ -21,4 +21,12 @@ public class Author extends BaseModel {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void addBook(Book book) {
+        this.book.add(book);
+    }
+
+    public List<Book> getBook(){
+        return book;
+    }
 }

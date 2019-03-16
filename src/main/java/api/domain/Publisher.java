@@ -14,6 +14,14 @@ public class Publisher extends BaseModel {
     @ManyToMany
     List<Book> book;
 
+    public List<Book> getBook() {
+        return book;
+    }
+
+    public void addBooks(Book book) {
+        this.book.add(book);
+    }
+
     public String getName() {
         return name;
     }

@@ -49,16 +49,16 @@ public class Book extends BaseModel {
         return authors;
     }
 
-    public void setAuthors(List<Author> authors) {
-        this.authors = authors;
+    public void addAuthors(Author author) {
+        this.authors.add(author);
     }
 
     public List<Publisher> getPublishers() {
         return publishers;
     }
 
-    public void setPublishers(List<Publisher> publishers) {
-        this.publishers = publishers;
+    public void addPublishers(Publisher publisher) {
+        this.publishers.add(publisher);
     }
 
     public String getYear() {
