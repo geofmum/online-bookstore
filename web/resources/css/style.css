@@ -176,8 +176,13 @@ header{
 .signup{
     padding: 20px 25px;
 }
-.signup h1{
-   font-size: 16px;
+.signup .hdr{
+    font-size: 16px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
+}
+.signupcont{
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }

@@ -1,6 +1,11 @@
 <jsp:include page='header.jsp'></jsp:include>
-<main class="container signup">
-<h1>Fill the form to get full access</h1>
+<div class="container signup">
+
+    <div class="signupcont">
+        <div class="alert alert-info" role="alert">
+            Signup
+        </div>
+    <p>Fill the form to get full access</p>
 
     <form action="index.jsp" method="post">
         <div class="form-row">
@@ -58,7 +63,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Sign in</button>
     </form>
+</div>
 
-
-</main>
+</div>
 <jsp:include page='footer.jsp'></jsp:include>
