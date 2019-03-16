@@ -34,6 +34,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.25.2" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.21" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
         </element>
       </element>
     </root>
