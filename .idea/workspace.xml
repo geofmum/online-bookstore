@@ -6,121 +6,83 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="5d69ac3a-411d-4ae1-9283-7ceeb728a264" name="Default Changelist" comment="">
-=======
     <list default="true" id="bcd62704-cc2b-49a0-9962-cfee2b75a68d" name="Default Changelist" comment="">
->>>>>>> Stashed changes
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/fixtures/DatabaseFixtures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/fixtures/UserFixtures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/onlinebookstore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/onlinebookstore_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/onlinebookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/onlinebookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/Login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/signUp.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/signUp.jsp" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/out/artifacts/onlinebookstore_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlinebookstore_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlinebookstore_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/onlinebookstore_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/onlinebookstore_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/CartItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/Publisher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/dummy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/repository/IRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java" afterDir="false" />
->>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ebean.mf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ebean.mf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app.db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="app.db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-<<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/views/signUp.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-=======
-    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/CartItem.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/BaseModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#208#209#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#654#655#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#719#720#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="219">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Book.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/IRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1159#1160#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Author.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#124#125#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -128,160 +90,69 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/fixtures/DatabaseFixtures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+              <folding>
+                <element signature="e#97#98#0" expanded="true" />
+                <element signature="e#124#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/BaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/fixtures/UserFixtures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.mf">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.mf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
->>>>>>> Stashed changes
+            <state relative-caret-position="17">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< Updated upstream
-        <entry file="file://$PROJECT_DIR$/web/views/login.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/CartItem.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/BaseRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="e#126#127#0" expanded="true" />
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#89#90#0" expanded="true" />
-                <element signature="e#115#116#0" expanded="true" />
-              </folding>
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< Updated upstream
-        <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-              </folding>
->>>>>>> Stashed changes
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< Updated upstream
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Publisher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#120#121#0" expanded="true" />
-                <element signature="e#147#148#0" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-              </folding>
->>>>>>> Stashed changes
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -291,10 +162,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-<<<<<<< Updated upstream
-        <option value="Jsp File" />
-=======
->>>>>>> Stashed changes
         <option value="Class" />
       </list>
     </option>
@@ -305,33 +172,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< Updated upstream
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/web/views/Login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/api/filters/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/controller/SignUp.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/web/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/web/views/signUp.jsp" />
-=======
         <option value="$PROJECT_DIR$/src/main/java/api/domain/BaseModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/domain/Cart.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/filters/AuthenticationFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/repository/BaseRepository.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/api/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/domain/Publisher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/domain/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/domain/Author.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/domain/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/api/domain/CartItem.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/ebean.mf" />
+        <option value="$PROJECT_DIR$/src/main/java/api/domain/Address.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/domain/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/domain/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/domain/Publisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/domain/CartItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/repository/IRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java" />
->>>>>>> Stashed changes
+        <option value="$PROJECT_DIR$/src/main/java/api/fixtures/DatabaseFixtures.java" />
+        <option value="$PROJECT_DIR$/src/main/java/api/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/api/fixtures/UserFixtures.java" />
       </list>
     </option>
   </component>
@@ -342,19 +202,12 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-<<<<<<< Updated upstream
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="110" />
-    <option name="y" value="240" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="965" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-=======
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
->>>>>>> Stashed changes
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -365,19 +218,6 @@
         <subPane>
           <expand>
             <path>
-<<<<<<< Updated upstream
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -389,48 +229,48 @@
             <path>
               <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
->>>>>>> Stashed changes
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-<<<<<<< Updated upstream
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="online-bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="online-bookstore" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="onlinebookstore" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlinebookstore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
->>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -441,25 +281,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-<<<<<<< Updated upstream
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552682977758" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Developers Zone\online-bookstore\web\resources" />
-      <recent name="C:\Developers Zone\online-bookstore\web\resources\css" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/api/domain" />
     </key>
-=======
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
->>>>>>> Stashed changes
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -474,11 +309,7 @@
     </option>
   </component>
   <component name="RunManager">
-<<<<<<< Updated upstream
-    <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-=======
     <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
->>>>>>> Stashed changes
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="onlinebookstore:war exploded">
@@ -488,11 +319,7 @@
         </artifact>
       </deployment>
       <server-settings>
-<<<<<<< Updated upstream
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_online-bookstore" />
-=======
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_onlinebookstore_2" />
->>>>>>> Stashed changes
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -500,11 +327,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-<<<<<<< Updated upstream
-        <option name="DEBUG_PORT" value="51878" />
-=======
         <option name="DEBUG_PORT" value="50551" />
->>>>>>> Stashed changes
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -564,185 +387,64 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5d69ac3a-411d-4ae1-9283-7ceeb728a264" name="Default Changelist" comment="" />
+      <changelist id="bcd62704-cc2b-49a0-9962-cfee2b75a68d" name="Default Changelist" comment="" />
       <created>1552667796839</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552667796839</updated>
-<<<<<<< Updated upstream
-      <workItem from="1552667803215" duration="1902000" />
-      <workItem from="1552680112972" duration="216000" />
-      <workItem from="1552680393210" duration="2567000" />
-    </task>
-    <task id="LOCAL-00001" summary="Adding some features">
-      <created>1552672468905</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1552672468906</updated>
-=======
-      <workItem from="1552667803215" duration="11775000" />
->>>>>>> Stashed changes
+      <workItem from="1552667803215" duration="16118000" />
+      <workItem from="1552701946442" duration="6847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< Updated upstream
-    <option name="totallyTimeSpent" value="6644000" />
+    <option name="totallyTimeSpent" value="22965000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78902954" visible="true" weight="0.2295302" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79242176" visible="true" weight="0.16117217" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Learn" order="3" />
+      <window_info id="Web" order="2" sideWeight="0.20757826" side_tool="true" visible="true" weight="0.16117217" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Web" order="6" sideWeight="0.21097046" side_tool="true" visible="true" weight="0.2295302" />
-      <window_info id="Image Layers" order="7" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-=======
-    <option name="totallyTimeSpent" value="11775000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="962" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Web" sideWeight="0.2058319" side_tool="true" visible="true" weight="0.24969475" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7941681" visible="true" weight="0.24969475" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Application Servers" weight="0.32988507" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32988507" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Messages" weight="0.32988507" />
+      <window_info id="Learn" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32959184" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32988507" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32988507" />
->>>>>>> Stashed changes
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38061225" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-<<<<<<< Updated upstream
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32988507" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32988507" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32988507" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24969475" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.2020757" />
+      <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding some features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding some features" />
   </component>
   <component name="ebeanEnhancement">
     <option name="enabled" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/dummy.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/BaseController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/BaseModel.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/filters/AuthenticationFilter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/providers/Database.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/shoppingCart.jsp">
-=======
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dummy.java">
->>>>>>> Stashed changes
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/productDisplay.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/ordersPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/filters/AuthenticationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-=======
+    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/api/dummy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -770,20 +472,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/filters/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Cart.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/filters/Filter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/CartController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -794,30 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/providers/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-=======
     <entry file="jar:///Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -836,55 +502,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
-=======
-        <state relative-caret-position="85">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/BaseModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/SignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/BaseRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#126#127#0" expanded="true" />
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#89#90#0" expanded="true" />
-            <element signature="e#115#116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,211 +512,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Author.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1209">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="42" column="41" lean-forward="true" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/providers/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Customer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/BaseDomain.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
->>>>>>> Stashed changes
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-          </folding>
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/22c9de96-17e1-4a48-bb4f-404738f80291/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://22c9de96-17e1-4a48-bb4f-404738f80291/schema/main/table/sqlite_master">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/views/signUp.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-=======
     <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/CartItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Publisher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/Address.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/CartItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/domain/BaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/IRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/api/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/api/domain/query/QUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="210">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ebean.mf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
->>>>>>> Stashed changes
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/fixtures/DatabaseFixtures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding>
+            <element signature="e#97#98#0" expanded="true" />
+            <element signature="e#124#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://22c9de96-17e1-4a48-bb4f-404738f80291/schema/main/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/fixtures/UserFixtures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

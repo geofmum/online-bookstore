@@ -7,12 +7,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user")
 public class User extends BaseModel {
-    private String name;
-    private String password;
-    private String profile_pic;
+    String name;
+    String password;
+    String profile_pic;
 
-    @OneToOne(mappedBy = "address")
-    private Address address;
+    @OneToOne(mappedBy = "user")
+    Address address;
+
+    @OneToOne(mappedBy = "user")
+    CartItem cart_item;
 
     public String getName() {
         return name;

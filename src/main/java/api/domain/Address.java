@@ -1,22 +1,21 @@
 package api.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "address")
 public class Address extends BaseModel {
-    protected String street;
-    protected String appartment;
-    protected String city;
-    protected String state;
-    protected String zipcode;
-    protected String phonenumber;
+    String street;
+    String appartment;
+    String city;
+    String state;
+    String zipcode;
+    String phonenumber;
 
     @OneToOne
-    protected User user;
+    User user;
 
     public User getUser() {
         return user;

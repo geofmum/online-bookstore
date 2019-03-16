@@ -6,17 +6,20 @@ import java.util.List;
 @Entity
 @Table(name = "book")
 public class Book extends BaseModel {
-    protected String category;
-    protected String ISBN;
-    protected String title;
-    protected String year;
-    protected double price;
+    String category;
+    String ISBN;
+    String title;
+    String year;
+    double price;
 
-    @OneToMany(mappedBy = "author")
-    protected List<Author> authors;
+    @ManyToMany(mappedBy = "book")
+    List<Author> authors;
 
-    @OneToMany(mappedBy = "publisher")
-    protected List<Publisher> publishers;
+    @ManyToMany(mappedBy = "book")
+    List<Publisher> publishers;
+
+    @OneToOne(mappedBy = "book")
+    CartItem cart_item;
 
     public String getCategory() {
         return category;

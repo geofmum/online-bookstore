@@ -34,15 +34,6 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>base</servlet-name>
-        <servlet-class>api.controller.BaseController</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>base</servlet-name>
-        <url-pattern>/baseController</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
         <servlet-name>order</servlet-name>
         <servlet-class>api.controller.OrderController</servlet-class>
     </servlet>

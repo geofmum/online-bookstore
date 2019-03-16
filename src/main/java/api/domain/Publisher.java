@@ -1,12 +1,18 @@
 package api.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import java.util.List;
 
 @Entity
 @Table(name = "publisher")
 public class Publisher extends BaseModel {
-    protected String name;
+    String name;
+
+    @ManyToMany
+    List<Book> book;
 
     public String getName() {
         return name;

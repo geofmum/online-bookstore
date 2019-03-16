@@ -1,5 +1,6 @@
 package api.controller;
 
+import api.fixtures.DatabaseFixtures;
 import api.providers.Database;
 import io.ebean.EbeanServer;
 
@@ -20,7 +21,8 @@ public abstract class BaseController extends HttpServlet {
 
         String rootDir = getProjectRootDir();
 
-        Database.INSTANCE.initialize(rootDir + "app.db");
+        Database.INSTANCE.initialize(rootDir + "/app.db");
+        DatabaseFixtures.INSTANCE.initialize();
     }
 
     protected String getProjectRootDir() {
