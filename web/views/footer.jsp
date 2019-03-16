@@ -33,6 +33,8 @@
     </div>
 
 </footer>
-<script src="resources/js/jquery.js"></script>
-<script src="resources/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="resources/js/script.js"></script>

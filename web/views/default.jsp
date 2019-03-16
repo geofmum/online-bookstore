@@ -38,7 +38,7 @@
                 <div class="book">
                     <div class="book-img">
                         <span>Save 12%</span>
-                        <img src="images/book1.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book1.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -51,7 +51,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -64,7 +64,7 @@
                 <div class="book">
                     <div class="book-img">
                         <span>Save 12%</span>
-                        <img src="images/book3.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book3.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -77,7 +77,7 @@
                 <div class="book">
                     <div class="book-img">
                         <span>Save 12%</span>
-                        <img src="images/book1.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book1.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -96,7 +96,7 @@
                 <div class="book">
                     <div class="book-img">
                         <span>Save 12%</span>
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -109,7 +109,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -122,7 +122,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -135,7 +135,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -154,7 +154,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -167,7 +167,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -180,7 +180,7 @@
                 <div class="book">
                     <div class="book-img">
 
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -193,7 +193,7 @@
                 <div class="book">
                     <div class="book-img">
                         <span>Save 12%</span>
-                        <img src="images/book2.jpg" class="center"  height="200" alt="">
+                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
                         <h5 class="book-title">Book title</h5>
@@ -218,19 +218,19 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="rounded-circle" src="images/testi1.jpg" alt="First slide">
+                    <img class="rounded-circle" src="resources/images/testi1.jpg" alt="First slide">
                     <p>“Now two or three times a year (especially after Christmas) my family shops on<br>
                         the Bookshelf – it’s a tradition!”</p>
                     <p class="font-italic">- Sarah Jefferson</p>
                 </div>
                 <div class="carousel-item">
-                    <img class="rounded-circle" src="images/testi2.jpg" alt="Second slide">
+                    <img class="rounded-circle" src="resources/images/testi2.jpg" alt="Second slide">
                     <p>“Now two or three times a year (especially after Christmas) my family shops on<br>
                         the Bookshelf – it’s a tradition!”</p>
                     <p class="font-italic">- Mike Haferson</p>
                 </div>
                 <div class="carousel-item">
-                    <img class="rounded-circle" src="images/testi3.jpg" alt="Third slide">
+                    <img class="rounded-circle" src="resources/images/testi3.jpg" alt="Third slide">
                     <p>“Now two or three times a year (especially after Christmas) my family shops on<br>
                         the Bookshelf – it’s a tradition!”</p>
                     <p class="font-italic">- Nathan Burns</p>
