@@ -5,5 +5,6 @@ public enum DatabaseFixtures {
 
     public void initialize(){
         UserFixtures.INSTANCE.initialize();
+        BookFixtures.INSTANCE.initialize();
     }
 }
