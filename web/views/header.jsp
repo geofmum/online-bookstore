@@ -24,8 +24,8 @@
             <div class="col-8">
                 <div class="float-right">
                     <a class="cart" href="#"><span class="fas fa-shopping-cart"></span> <span class="items">0</span></a>
-                    <a class="btn btn-warning" href="#"><i class="fas fa-user"></i> Login</a>
-                    <a class="btn btn-warning" href="#"><i class="fas fa-user-plus"></i> Sign up</a>
+                    <a class="btn btn-warning" href="login"><i class="fas fa-user"></i> Login</a>
+                    <a class="btn btn-warning" href="signup"><i class="fas fa-user-plus"></i> Sign up</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
                     </li>
 
                 </ul>
-
+                <c:if test="${pagename != 'signup'}">
                 <form class="form-inline my-2 my-lg-0">
                     <select class="custom-select" id="inputGroupSelect01">
                         <option selected>All Categories</option>
@@ -81,6 +81,7 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-info" type="submit">Search</button>
                 </form>
+                </c:if>
             </div>
         </nav>
     </header>
