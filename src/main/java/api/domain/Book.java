@@ -11,6 +11,24 @@ public class Book extends BaseModel {
     String title;
     String year;
     double price;
+    String thumb_url;
+    double discount;
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
+    }
+
+    public String getThumb_url() {
+        return thumb_url;
+    }
+
+    public void setThumb_url(String thumb_url) {
+        this.thumb_url = thumb_url;
+    }
 
     @ManyToMany(mappedBy = "book")
     List<Author> authors;

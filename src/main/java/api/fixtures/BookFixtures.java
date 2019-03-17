@@ -25,10 +25,12 @@ public enum BookFixtures {
             instance.addAuthors(author);
             instance.addPublishers(publisher);
             instance.setISBN("isbn-" + randInt);
-            instance.setPrice(90 + randInt);
+            instance.setPrice(10 + randInt);
             instance.setTitle("title-" + randInt);
             instance.setCategory("category" + randInt);
             instance.setYear("1990" + randInt);
+            instance.setThumb_url("/resources/images/book" + (i + 1) + ".jpg");
+//            instance.setDiscount();
             instance.save();
         }
     }

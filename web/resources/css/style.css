@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster|Fredericka+the+Great');
 
+ul, ol {
+    list-style: none;
+}
+
 .shopname{
     font-family: 'Fredericka the Great', cursive;
     font-size: 28px;

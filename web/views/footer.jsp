@@ -1,5 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <footer>
-    <div  class="footer">
+    <div class="footer">
         <div class="container">
             <p class="shopname" style="color: #fff">BuyBook</p>
             <ul class="list-unstyled list-inline text-center">
@@ -38,3 +39,7 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="resources/js/script.js"></script>
+
+<c:forEach items="${scripts}" var="script">
+    <script src="${script}"></script>
+</c:forEach>
