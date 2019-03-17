@@ -26,8 +26,8 @@ public enum BookFixtures {
             int randInt = numberGenerator.nextInt(1000);
 
             Book instance = new Book();
-            Author author = new QAuthor().id.eq(i + 1).findOne();
-            Publisher publisher = new QPublisher().id.eq(i + 1).findOne();
+            Author author = new QAuthor().id.eq((i%10) + 1).findOne();
+            Publisher publisher = new QPublisher().id.eq((i%5) + 1).findOne();
 
             instance.addAuthors(author);
             instance.addPublishers(publisher);
@@ -38,7 +38,7 @@ public enum BookFixtures {
             instance.setCategory(category[i%5] );
             instance.setYear("1990" + randInt);
             if(i<5)instance.setDiscount(10);
-            instance.setThumb_url("/resources/images/book" + (i + 1) + ".jpg");
+            instance.setThumb_url("/resources/images/book" + (i%10 + 1) + ".jpg");
 //            instance.setDiscount();
             instance.save();
         }
