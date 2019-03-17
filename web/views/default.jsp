@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <main  class="container">
 
     <div class="banner">
@@ -34,178 +35,99 @@
     <div class="bookdetails">
         <h4 class="text-info underline">Best Seller <a href="" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
+            <c:forEach items="${books}" var="book">
             <div class="col-md-3">
                 <div class="book">
                     <div class="book-img">
-                        <span>Save 12%</span>
-                        <img src="resources/images/book1.jpg" class="center"  height="200" alt="">
+                        <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+                        <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}" />
+                        <img src="${book.thumb_url}" class="center"  height="200" alt="">
                     </div>
                     <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-danger">$10.99</span> <strike>$200</strike> </p>
+                        <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+                        <p class="book-text">${book.description}<br>
+                            <span class="text-danger">$${discountedPrice}</span>
+                            <c:if test="${book.discount != discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
                         <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-                        <span>Save 12%</span>
-                        <img src="resources/images/book3.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-                        <span>Save 12%</span>
-                        <img src="resources/images/book1.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
+            </c:forEach>
         </div>
     </div>
 
     <div class="bookdetails">
-        <h4 class="text-info underline">Romance <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <h4 class="text-info underline">Romance Books <a href="" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-                        <span>Save 12%</span>
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
+            <c:forEach items="${romanceBooks}" var="book">
 
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                <div class="col-md-3">
+                    <div class="book">
+                        <div class="book-img">
+                            <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}" />
+                            <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                        </div>
+                        <div class="book-body">
+                            <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+                            <p class="book-text">${book.description}<br>
+                                <span class="text-danger">$${discountedPrice}</span>
+                                <c:if test="${book.discount != discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
+                            </p>
+                            <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
+            </c:forEach>
         </div>
     </div>
 
     <div class="bookdetails">
-        <h4 class="text-info underline">Detective Fiction <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <h4 class="text-info underline">Fantasy Books <a href="" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
+            <c:forEach items="${FantasyBooks}" var="book">
+                <div class="col-md-3">
+                    <div class="book">
+                        <div class="book-img">
+                            <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
 
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                            <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                        </div>
+                        <div class="book-body">
+                            <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+                            <p class="book-text">${book.description}<br>
+                                <span class="text-danger">$${book.price}</span> <strike>$200</strike> </p>
+                            <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="book">
-                    <div class="book-img">
-                        <span>Save 12%</span>
-                        <img src="resources/images/book2.jpg" class="center"  height="200" alt="">
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title">Book title</h5>
-                        <p class="book-text">Some quick example text to build on the card ti.<br><span class="text-info">$10.99</span> <strike>$200</strike> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
-            </div>
+            </c:forEach>
 
         </div>
     </div>
+    <div class="bookdetails">
+        <h4 class="text-info underline">Fantasy Books <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <div class="row">
+            <c:forEach items="${DramaBooks}" var="book">
+                <div class="col-md-3">
+                    <div class="book">
+                        <div class="book-img">
+                            <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
 
+                            <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                        </div>
+                        <div class="book-body">
+                            <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+                            <p class="book-text">${book.description}<br>
+                                <span class="text-danger">$${book.price}</span> <strike>$200</strike> </p>
+                            <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </c:forEach>
+
+        </div>
+    </div>
 
 </main>
 <section class="testimonial">

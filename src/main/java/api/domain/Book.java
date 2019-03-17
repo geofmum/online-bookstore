@@ -9,6 +9,7 @@ public class Book extends BaseModel {
     String category;
     String ISBN;
     String title;
+    String description;
     String year;
     double price;
     String thumb_url;
@@ -61,6 +62,14 @@ public class Book extends BaseModel {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public List<Author> getAuthors() {
