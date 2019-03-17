@@ -7,7 +7,7 @@ import java.util.Random;
 
 public enum AuthorFixtures {
     INSTANCE;
-    private final int RECORDS  = 10;
+    private final int RECORDS  = 20;
 
     public void initialize(){
         Random numberGenerator = new Random();
