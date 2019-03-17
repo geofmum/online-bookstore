@@ -33,6 +33,9 @@ $(() => {
 
             this.loadElements(this.$cache);
             this.registerDomEvents(this.$cache);
+            this.computePricelistPrices();
+            this.computeQuotedPrice("hardcover");
+
         }
 
         loadElements(cache) {
@@ -85,10 +88,24 @@ $(() => {
             const {quotedPrice} = this.$cache.price.quoted.data();
             const pricingIndex = this.packageTypePriceIndexes[packageType];
             const price = pricingIndex * quotedPrice;
-            const discountedAmount = price * (1 - this.$cache.price.percentage.data().discount);
+            const discountedAmount = price * this.$cache.price.percentage.data().discount;
 
             this.$cache.price.quoted.text(this.round(price, 2));
             this.$cache.price.discounted.text(this.round(discountedAmount, 2));
+        }
+
+        computePricelistPrices() {
+            const that = this;
+            this.$cache.priceList.children('.price-option').each(function () {
+                const $el = $(this);
+                const packageType = $el.data().package;
+
+                const {quotedPrice} = that.$cache.price.quoted.data();
+                const pricingIndex = that.packageTypePriceIndexes[packageType];
+                const price = pricingIndex * quotedPrice;
+
+                $el.find(".price-value").first().text(price);
+            });
         }
 
         round(value, decimals) {

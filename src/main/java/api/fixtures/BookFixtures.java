@@ -30,7 +30,7 @@ public enum BookFixtures {
             instance.setCategory("category" + randInt);
             instance.setYear("1990" + randInt);
             instance.setThumb_url("/resources/images/book" + (i + 1) + ".jpg");
-//            instance.setDiscount();
+            instance.setDiscount(numberGenerator.nextDouble());
             instance.save();
         }
     }
