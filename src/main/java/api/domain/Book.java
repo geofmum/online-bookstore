@@ -106,7 +106,7 @@ public class Book extends BaseModel {
     }
 
     public String computeDiscountedPrice(){
-        DecimalFormat df2 = new DecimalFormat(".##");
+        DecimalFormat df2 = new DecimalFormat("#.00");
         double discountedValue=price-(price*discount/100);
         return df2.format(discountedValue);
     }

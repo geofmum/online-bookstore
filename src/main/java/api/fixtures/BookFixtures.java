@@ -30,8 +30,9 @@ public enum BookFixtures {
             instance.setDescription(description[randInt % 4]);
             instance.setCategory(category[i % 5]);
             instance.setYear("1990" + randInt);
-            instance.setDiscount(numberGenerator.nextDouble());
-            if (i < 5) instance.setDiscount(0.1);
+
+            if (i>=10 && i <= 15) instance.setDiscount(0);
+            else instance.setDiscount(Double.valueOf((int) (Math.random() * (70 - 10)) + 10));
             instance.setThumb_url("/resources/images/book" + (i % 10 + 1) + ".jpg");
 
             instance.save();
