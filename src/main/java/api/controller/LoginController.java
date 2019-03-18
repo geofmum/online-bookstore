@@ -35,6 +35,7 @@ public class LoginController extends BaseController {
         else{
             HttpSession session=req.getSession();
             session.setAttribute("user",user.getName());
+            session.setAttribute("userid",user.getId());
             Cookie cookie=new Cookie("user",uname);
             cookie.setMaxAge(24*60*60);
             resp.addCookie(cookie);
