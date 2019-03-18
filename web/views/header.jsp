@@ -28,9 +28,19 @@
 
             <div class="col-8">
                 <div class="float-right">
-                    <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span id="shoppingItems" class="items">0</span></a>
-                    <a class="btn btn-warning" href="login"><i class="fas fa-user"></i> Login</a>
-                    <a class="btn btn-warning" href="signup"><i class="fas fa-user-plus"></i> Sign up</a>
+                    <%--<% String userName=session.getAttribute("uname").toString();%>--%>
+                    <c:choose>
+                    <c:when test="${user!=null}">
+                        <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span id="shoppingItems1" class="items">0</span></a>
+                        <a class="btn btn-warning" href="logout"><i class="fas fa-user"></i> Logout</a>
+                        <a class="btn btn-warning" href=""><i class="fas fa-user"></i>${user}</a>
+                    </c:when>
+                    <c:when test="${user==null}">
+                        <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span id="shoppingItems" class="items">0</span></a>
+                        <a class="btn btn-warning" href="login"><i class="fas fa-user"></i> Login</a>
+                        <a class="btn btn-warning" href="signup"><i class="fas fa-user-plus"></i> Sign up</a>
+                    </c:when>
+                    </c:choose>
                 </div>
             </div>
         </div>

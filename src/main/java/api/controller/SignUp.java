@@ -63,12 +63,13 @@ public class SignUp extends BaseController {
 
             session = req.getSession(true);
             session.setAttribute("userid", user.getId());
+            session.setAttribute("user", user.getName());
 
             if (cartId != null && cartId == "null") {
                 session.setAttribute("cart-id", cartId);
             }
 
-            resp.sendRedirect("/");
+            resp.sendRedirect("/confirmationSignup");
         }
 
     }

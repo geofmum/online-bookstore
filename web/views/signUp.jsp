@@ -6,7 +6,6 @@
         <div class="alert alert-info" role="alert">
             Signup
         </div>
-        <p>Fill the form to get full access</p>
 
         <form  method="post">
             <div class="form-row">
@@ -59,7 +58,7 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Sign up</button>
         </form>
     </div>
 
