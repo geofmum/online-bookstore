@@ -5,7 +5,6 @@ $(() => {
             this.$cache = {
                 // buttons
                 addToCartBtn: null,
-                buyItNowBtn: null,
 
                 // inputs
                 deliveryRadio: null,
@@ -33,6 +32,9 @@ $(() => {
 
             this.loadElements(this.$cache);
             this.registerDomEvents(this.$cache);
+            this.computePricelistPrices();
+            this.computeQuotedPrice("hardcover");
+
         }
 
         loadElements(cache) {
@@ -49,7 +51,6 @@ $(() => {
         registerDomEvents(cache) {
             const that = this;
             cache.addToCartBtn.click(() => this.onAddToCart());
-            cache.buyItNowBtn.click(() => this.onBuyItNow());
 
             cache.priceList.children('.price-option').each(function () {
                 const $el = $(this);
@@ -59,16 +60,19 @@ $(() => {
 
         onAddToCart() {
             this.cartItem.packageType = this.$cache.priceList.children('.selected').first().data().package;
+            this.cartItem.delivery = $('input[name="delivery"]:checked').val();
+            this.cartItem.quantity = 1;
+            this.cartItem.book_id = this.$cache.addToCartBtn.data().bookId;
 
-            console.log(this.cartItem);
-            console.log($('input[name="delivery"]:checked').val());
-            // const cartItem = {
-            //     bookPackage:
-            // }
-        }
+            this.$cache.addToCartBtn.prop('disabled', true);
 
-        onBuyItNow() {
-            console.debug('buy item now');
+            $.post('/cart', {data: JSON.stringify(this.cartItem)},()=>{}, "json")
+                .done(()=>{
+                    // @todo make a method call to increment to the cart items count
+                })
+                .always(() => {
+                this.$cache.addToCartBtn.prop('disabled', false);
+            });
         }
 
         onSelectPackageType($el) {
@@ -85,10 +89,24 @@ $(() => {
             const {quotedPrice} = this.$cache.price.quoted.data();
             const pricingIndex = this.packageTypePriceIndexes[packageType];
             const price = pricingIndex * quotedPrice;
-            const discountedAmount = price * (1 - this.$cache.price.percentage.data().discount);
+            const discountedAmount = price * this.$cache.price.percentage.data().discount;
 
             this.$cache.price.quoted.text(this.round(price, 2));
             this.$cache.price.discounted.text(this.round(discountedAmount, 2));
+        }
+
+        computePricelistPrices() {
+            const that = this;
+            this.$cache.priceList.children('.price-option').each(function () {
+                const $el = $(this);
+                const packageType = $el.data().package;
+
+                const {quotedPrice} = that.$cache.price.quoted.data();
+                const pricingIndex = that.packageTypePriceIndexes[packageType];
+                const price = pricingIndex * quotedPrice;
+
+                $el.find(".price-value").first().text(price);
+            });
         }
 
         round(value, decimals) {

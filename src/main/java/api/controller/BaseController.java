@@ -2,6 +2,7 @@ package api.controller;
 
 import api.fixtures.DatabaseFixtures;
 import api.providers.Database;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.ebean.EbeanServer;
 
 import javax.servlet.ServletException;
@@ -9,14 +10,18 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @WebServlet(name = "BaseController")
 public abstract class BaseController extends HttpServlet {
+    protected ObjectMapper mapper = new ObjectMapper();
     String[] category;
+
     @Override
     public void init() throws ServletException {
         super.init();
@@ -24,8 +29,9 @@ public abstract class BaseController extends HttpServlet {
         String rootDir = getProjectRootDir();
 
         Database.INSTANCE.initialize(rootDir + "/app.db");
-       // DatabaseFixtures.INSTANCE.initialize();
-        category=new String[]{"Best Seller","Drama","Fantasy","Romance","Science"};
+        DatabaseFixtures.INSTANCE.initialize();
+
+        category = new String[]{"Best Seller", "Drama", "Fantasy", "Romance", "Science"};
     }
 
     @Override
@@ -48,19 +54,19 @@ public abstract class BaseController extends HttpServlet {
         return rootDir;
     }
 
-    protected List<String> getStyles(){
+    protected List<String> getStyles() {
         return new ArrayList<>();
     }
 
-    protected List<String> getScripts(){
+    protected List<String> getScripts() {
         return new ArrayList<>();
     }
 
-    protected void registerStyles(HttpServletRequest req){
+    protected void registerStyles(HttpServletRequest req) {
         req.setAttribute("styles", getStyles());
     }
 
-    protected void  registerScripts(HttpServletRequest req){
+    protected void registerScripts(HttpServletRequest req) {
         req.setAttribute("scripts", getScripts());
     }
 

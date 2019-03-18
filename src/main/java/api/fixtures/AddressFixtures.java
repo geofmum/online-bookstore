@@ -1,7 +1,6 @@
 package api.fixtures;
 
 import api.domain.Address;
-import api.domain.Author;
 import api.domain.User;
 import api.domain.query.QUser;
 

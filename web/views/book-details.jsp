@@ -1,6 +1,6 @@
 <jsp:include page='header.jsp'></jsp:include>
 
-<div class="container book-details" >
+<div class="container book-details">
     <div class="row">
         <div class="col-md-5 left-column">
             <img class="book-cover" src="${book.thumb_url}" alt="${book.title}">
@@ -12,27 +12,30 @@
             <div class="book-package-type">Hardcover</div>
             <div class="price d-flex align-content-end">
                 <div>
-                    <span class="currency-symbol">$</span><span data-quoted-price="${book.price}" id="price-quoted" class="price-quoted">${book.price}</span>
+                    <span class="currency-symbol">$</span><span data-quoted-price="${book.price}" id="price-quoted"
+                                                                class="price-quoted">${book.price}</span>
                 </div>
                 <div class="price-discount align-self-end">
-                    <span class="scalar-discount"><span class="currency-symbol">$</span><span id="discount-amount">14.04</span></span>
-                    <span class="vector-discount">Save <span data-discount="0.36" id="percent-value" class="percent-value">36%</span></span>
+                    <span class="scalar-discount"><span class="currency-symbol">$</span><span
+                            id="discount-amount">${discount_amount}</span></span>
+                    <span class="vector-discount">Save <span data-discount="${book.discount}" id="percent-value"
+                                                             class="percent-value">${percent_discount}%</span></span>
                 </div>
             </div>
             <ul id="price-list" class="price-list d-flex ">
                 <li data-package="hardcover" class="price-option selected">
                     <div class="price-group-name">Hardcover</div>
-                    <div class="price-value">$19.82</div>
+                    <div class="price-value">${book.price}</div>
                 </li>
 
                 <li data-package="audiobook" class="price-option">
                     <div class="price-group-name">Audiobook</div>
-                    <div class="price-value">$10.82</div>
+                    <div class="price-value">${book.price}</div>
                 </li>
 
                 <li data-package="largeprint" class="price-option">
                     <div class="price-group-name">Large Print</div>
-                    <div class="price-value">$30.82</div>
+                    <div class="price-value">${book.price}</div>
                 </li>
             </ul>
 
@@ -52,10 +55,19 @@
             </ul>
 
             <div class="call-to-action d-flex">
-                <button class="btn btn-primary mr-md-3" id="add-to-cart">Add to Cart</button>
-                <button class="btn btn-outline-secondary" type="button" id="buy-it-now">Sign in to Purchase Instantly
-                </button>
+                <button data-book-id="${book.id}" class="btn btn-primary mr-md-3" id="add-to-cart">Add to Cart</button>
+                <c:if test="${userid == null}">
+                    <a href="/signup" class="btn btn-outline-secondary" type="button">Sign in to Purchase Instantly
+                    </a>
+                </c:if>
+                <c:if test="${userid != null}">
+                    <a href="/cart" class="btn btn-outline-secondary" type="button" id="buy-it-now">Buy it now
+                    </a>
+                </c:if>
             </div>
+
+            <h3 class="book-summary">Book Summary</h3>
+            <p class="description">${book.description}</p>
         </div>
     </div>
 </div>

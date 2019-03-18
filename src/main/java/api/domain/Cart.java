@@ -1,5 +1,9 @@
 package api.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -7,9 +11,11 @@ import java.util.List;
 @Table(name = "cart")
 public class Cart extends BaseModel {
     @OneToOne
+    @JsonIgnoreProperties
     User user;
 
     @OneToMany(mappedBy = "cart")
+    @JsonIgnoreProperties
     List<CartItem> cart_items;
 
     boolean status;

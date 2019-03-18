@@ -1,5 +1,8 @@
 package api.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.text.DecimalFormat;
 import java.util.List;
@@ -15,6 +18,28 @@ public class Book extends BaseModel {
     double price;
     String thumb_url;
     double discount;
+    String author;
+    String publisher;
+
+    @OneToOne(mappedBy = "book")
+    @JsonIgnoreProperties
+    CartItem cart_item;
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
 
     public double getDiscount() {
         return discount;
@@ -31,15 +56,6 @@ public class Book extends BaseModel {
     public void setThumb_url(String thumb_url) {
         this.thumb_url = thumb_url;
     }
-
-    @ManyToMany(mappedBy = "book")
-    List<Author> authors;
-
-    @ManyToMany(mappedBy = "book")
-    List<Publisher> publishers;
-
-    @OneToOne(mappedBy = "book")
-    CartItem cart_item;
 
     public String getCategory() {
         return category;
@@ -71,22 +87,6 @@ public class Book extends BaseModel {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public List<Author> getAuthors() {
-        return authors;
-    }
-
-    public void addAuthors(Author author) {
-        this.authors.add(author);
-    }
-
-    public List<Publisher> getPublishers() {
-        return publishers;
-    }
-
-    public void addPublishers(Publisher publisher) {
-        this.publishers.add(publisher);
     }
 
     public String getYear() {
