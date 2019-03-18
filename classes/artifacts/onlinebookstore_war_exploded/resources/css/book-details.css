@@ -1,0 +1,103 @@
+.book-details {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.book-details h2 {
+    font-weight: 300;
+}
+
+.book-details h3 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.book-details h3 .book-author {
+    color: #17A2B8;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.book-details .price-list {
+    margin: 16px 0;
+    padding: 0 0 8px;
+}
+
+.book-details .book-cover {
+    min-width: 400px;
+    max-width: 100%;
+}
+
+.book-details .book-package-type {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.book-details .price {
+    margin-bottom: 16px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.book-details .price .currency-symbol {
+    font-size: 75%;
+    vertical-align: text-top;
+}
+
+.book-details .price .price-discount {
+    font-size: 60%;
+    color: #555;
+    margin: 5px 0 5px 16px
+}
+
+.book-details .price .price-discount .scalar-discount {
+    margin-right: 4px;
+    padding-right: 6px;
+    border-right: 1px solid #ccc;
+}
+
+.book-details .price .price-discount .vector-discount {
+    color: #ffa810;
+}
+
+.book-details .price-list .price-option {
+    margin-right: 24px;
+    cursor: pointer;
+    text-align: center;
+    border: 3px solid #eee;
+    padding: 8px 16px;
+    min-width: 140px;
+}
+
+.book-details .price-list .price-option.selected {
+    border: 3px solid #195e80;
+}
+
+.book-details .price-list .price-option .price-group-name {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.book-details .price-list .price-option .price-value {
+    font-weight: 500;
+}
+
+.book-details .delivery-options {
+    padding: 0 0 8px;
+    margin: 16px 0;
+}
+
+.book-details .call-to-action {
+    max-width: 400px;
+    margin: 16px 0;
+}
+
+.book-details .book-summary {
+    padding: 16px 0 0;
+    font-size: 1.1rem;
+}
+
+
+
+
+

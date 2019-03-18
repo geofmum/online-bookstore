@@ -1,5 +1,8 @@
 package api.controller;
 
+import api.domain.User;
+import api.domain.query.QUser;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -13,7 +16,6 @@ public class LoginController extends BaseController {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         req.getRequestDispatcher("/views/login.jsp").forward(req,resp);
     }
 
@@ -21,19 +23,23 @@ public class LoginController extends BaseController {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String uname=req.getParameter("uname");
         String password=req.getParameter("pass");
-        if("MOH".equals(uname) && "123".equals(password)){
+
+        User user=new QUser()
+                .email.eq(uname)
+                .password.eq(password)
+                .findOne();
+
+        if(user==null){
+            resp.sendRedirect("login");
+        }
+        else{
             HttpSession session=req.getSession();
-            session.setAttribute("user",uname);
+            session.setAttribute("user",user.getName());
+            session.setAttribute("userid",user.getId());
             Cookie cookie=new Cookie("user",uname);
             cookie.setMaxAge(24*60*60);
             resp.addCookie(cookie);
-            resp.sendRedirect("index.jsp");
-        }
-        else{
-            RequestDispatcher rd=getServletContext().getRequestDispatcher("/login.jsp");
-            PrintWriter out=resp.getWriter();
-            out.print("Wrong Credentials");
-            rd.include(req,resp);
+            resp.sendRedirect("/");
         }
     }
 }
