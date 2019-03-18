@@ -15,7 +15,25 @@ $(".ajaxAuthorName").click(function(){
     $.ajax({
         "url": url,
         "type": "POST",
-        "data": {name:data},
+        "data": {name:data,type:1},
+        "success": function(response){
+            var obj=JSON.parse(response);
+            var html='';
+            for(let i=0;i<obj.length;i++)
+                html+=book(obj[i]);
+            //console.log(html);
+            $(".authorbooks").html(html);
+        }
+    });
+});
+$(".ajaxPublisherName").click(function(){
+    var data=$(this).text();
+    var url='/ajax';
+
+    $.ajax({
+        "url": url,
+        "type": "POST",
+        "data": {name:data,type:2},
         "success": function(response){
             var obj=JSON.parse(response);
             var html='';

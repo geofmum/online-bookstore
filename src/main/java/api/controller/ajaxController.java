@@ -22,9 +22,15 @@ public class ajaxController extends BaseController {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String data=req.getParameter("name");
         data=data.trim();
+        int type=Integer.valueOf(req.getParameter("type"));
         //System.out.println(data);
-
-        List<Book> books = new QBook().where().author.eq(data).findList();
+        List<Book> books=null;
+        if(type==1){
+            books = new QBook().where().author.eq(data).findList();
+        }
+        if(type==2){
+            books = new QBook().where().publisher.eq(data).findList();
+        }
        // System.out.println(books.size());
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");
