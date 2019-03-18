@@ -14,7 +14,7 @@
 
                 </div>
                 <div class="carousel-item">
-                    <p><q>Books are mirrors: you only see in them what you already have inside you.</q> &#8208; <strong>Carlos Ruiz Zafón</strong></p>
+                    <p><q>Books are mirrors: you only see in them what you already have inside you.</q> &#8208; <strong>Carlos Ruiz Zafon</strong></p>
                 </div>
                 <div class="carousel-item">
                     <p><q>A room without books is like a body without a soul.</q> &#8208; <strong>Cicero </strong></p>

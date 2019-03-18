@@ -28,7 +28,7 @@
 
             <div class="col-8">
                 <div class="float-right">
-                    <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span class="items">0</span></a>
+                    <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span id="shoppingItems" class="items">0</span></a>
                     <a class="btn btn-warning" href="login"><i class="fas fa-user"></i> Login</a>
                     <a class="btn btn-warning" href="signup"><i class="fas fa-user-plus"></i> Sign up</a>
                 </div>
