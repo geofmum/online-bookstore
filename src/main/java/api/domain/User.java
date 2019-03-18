@@ -11,6 +11,7 @@ import javax.persistence.*;
 public class User extends BaseModel {
     String name;
     String password;
+    String email;
     String profile_pic;
 
     @OneToOne(mappedBy = "user")
@@ -51,5 +52,13 @@ public class User extends BaseModel {
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
