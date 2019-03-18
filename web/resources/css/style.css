@@ -190,3 +190,32 @@ header{
     margin: 0 auto;
     margin-bottom: 30px;
 }
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.author{
+    background: #F8F9FA;
+    margin: 20px 0;
+}
+.author ul{
+    margin:10px 10px 0 10px;
+    padding:10px 0 0 10px;
+}
+.author li{
+    list-style:none;
+}
+.author h5.authortitle{
+    padding:10px 0 10px 15px;
+    margin:0 0 10px 0;
+    background:#DADADA;
+}
+.authorname{
+    padding:0 10px  20px 10px;
+}
+.authorbook{
+    border-left: 1px solid #ccc;
+}
+.authorbooks{
+    padding: 5px 20px;
+}

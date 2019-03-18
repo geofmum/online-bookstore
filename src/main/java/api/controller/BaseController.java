@@ -29,7 +29,7 @@ public abstract class BaseController extends HttpServlet {
         String rootDir = getProjectRootDir();
 
         Database.INSTANCE.initialize(rootDir + "/app.db");
-        DatabaseFixtures.INSTANCE.initialize();
+       // DatabaseFixtures.INSTANCE.initialize();
 
         category = new String[]{"Best Seller", "Drama", "Fantasy", "Romance", "Science"};
     }

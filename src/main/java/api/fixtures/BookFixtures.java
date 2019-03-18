@@ -22,7 +22,7 @@ public enum BookFixtures {
 
             Book instance = new Book();
 
-            instance.setAuthor("author-" + randInt);
+            instance.setAuthor("author-" + (i%5+1));
             instance.setPublisher("publisher-" + randInt);
             instance.setISBN("isbn-" + randInt);
             instance.setPrice(10 + randInt);
