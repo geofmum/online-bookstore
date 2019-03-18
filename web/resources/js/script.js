@@ -11,7 +11,9 @@ function updateCart(itemnumber){
 $(".ajaxAuthorName").click(function(){
     var data=$(this).text();
     var url='/ajax';
-
+    $(".ajaxChange").html(data);
+    $(".authorbooks").html('');
+    $("#loading").show();
     $.ajax({
         "url": url,
         "type": "POST",
@@ -22,14 +24,18 @@ $(".ajaxAuthorName").click(function(){
             for(let i=0;i<obj.length;i++)
                 html+=book(obj[i]);
             //console.log(html);
+            $("#loading").hide();
             $(".authorbooks").html(html);
         }
     });
 });
 $(".ajaxPublisherName").click(function(){
+
     var data=$(this).text();
     var url='/ajax';
-
+    $(".ajaxChange").html(data);
+    $(".authorbooks").html('');
+    $("#loading").show();
     $.ajax({
         "url": url,
         "type": "POST",
@@ -40,7 +46,9 @@ $(".ajaxPublisherName").click(function(){
             for(let i=0;i<obj.length;i++)
                 html+=book(obj[i]);
             //console.log(html);
+            $("#loading").hide();
             $(".authorbooks").html(html);
+
         }
     });
 });

@@ -219,5 +219,18 @@ header{
 }
 .authorbooks{
     padding: 5px 20px;
-
+    position: relative;
+    min-height: 400px;
+}
+#loading{
+    background: url("../images/loading.gif") no-repeat;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top:30%;
+    left:40%;
+    display: none;
+}
+.ajaxChange{
+    font-weight: bold;
 }

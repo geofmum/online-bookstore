@@ -14,7 +14,8 @@
 				</ul>
 			</div>
       		<div class="col-md-10 authorbook">
-				<h5 class="authortitle">Books of this Author </h5>
+				<h5 class="authortitle">Books of  <span class="ajaxChange">${ajaxChange}</span> </h5>
+				<div id="loading"></div>
 				<div class="row authorbooks">
 				 <c:forEach items="${books}" var="book">
 					<div class="col-md-3">

@@ -21,6 +21,7 @@ public class PubisherController extends BaseController {
         List<Book> books = new QBook().where().publisher.eq(firstAuthor).findList();
         req.setAttribute("publishers",publishers);
         req.setAttribute("books",books);
+        req.setAttribute("ajaxChange",firstAuthor);
         req.getRequestDispatcher("views/publisher.jsp").forward(req,resp);
 
     }
