@@ -55,10 +55,19 @@
             </ul>
 
             <div class="call-to-action d-flex">
-                <button data-book-id="${bood.id}" class="btn btn-primary mr-md-3" id="add-to-cart">Add to Cart</button>
-                <button class="btn btn-outline-secondary" type="button" id="buy-it-now">Sign in to Purchase Instantly
-                </button>
+                <button data-book-id="${book.id}" class="btn btn-primary mr-md-3" id="add-to-cart">Add to Cart</button>
+                <c:if test="${userid == null}">
+                    <a href="/signup" class="btn btn-outline-secondary" type="button">Sign in to Purchase Instantly
+                    </a>
+                </c:if>
+                <c:if test="${userid != null}">
+                    <a href="/cart" class="btn btn-outline-secondary" type="button" id="buy-it-now">Buy it now
+                    </a>
+                </c:if>
             </div>
+
+            <h3 class="book-summary">Book Summary</h3>
+            <p class="description">${book.description}</p>
         </div>
     </div>
 </div>

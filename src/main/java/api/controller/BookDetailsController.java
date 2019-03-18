@@ -31,8 +31,6 @@ public class BookDetailsController extends BaseController {
         int id = bookId != null ? Integer.valueOf(bookId) : 0;
 
         Book book = new QBook().id.eq(id)
-                .fetch("authors")
-                .fetch("publishers")
                 .findOne();
 
         if (book == null) {
@@ -41,8 +39,6 @@ public class BookDetailsController extends BaseController {
         }
 
         request.setAttribute("book", book);
-
-
         request.setAttribute("percent_discount", Math.round(book.getDiscount() * 100));
         request.setAttribute("discount_amount", Math.round(book.getPrice() * book.getDiscount()));
 

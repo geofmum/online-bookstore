@@ -1,11 +1,6 @@
 package api.fixtures;
 
-import api.domain.Author;
 import api.domain.Book;
-import api.domain.Publisher;
-import api.domain.User;
-import api.domain.query.QAuthor;
-import api.domain.query.QPublisher;
 
 import java.util.Random;
 
@@ -26,11 +21,9 @@ public enum BookFixtures {
             int randInt = numberGenerator.nextInt(1000);
 
             Book instance = new Book();
-            Author author = new QAuthor().id.eq((i % 10) + 1).findOne();
-            Publisher publisher = new QPublisher().id.eq((i % 5) + 1).findOne();
 
-            instance.addAuthors(author);
-            instance.addPublishers(publisher);
+            instance.setAuthor("author-" + randInt);
+            instance.setPublisher("publisher-" + randInt);
             instance.setISBN("isbn-" + randInt);
             instance.setPrice(10 + randInt);
             instance.setTitle("title-" + randInt);

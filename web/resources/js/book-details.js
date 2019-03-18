@@ -5,7 +5,6 @@ $(() => {
             this.$cache = {
                 // buttons
                 addToCartBtn: null,
-                buyItNowBtn: null,
 
                 // inputs
                 deliveryRadio: null,
@@ -52,7 +51,6 @@ $(() => {
         registerDomEvents(cache) {
             const that = this;
             cache.addToCartBtn.click(() => this.onAddToCart());
-            cache.buyItNowBtn.click(() => this.onBuyItNow());
 
             cache.priceList.children('.price-option').each(function () {
                 const $el = $(this);
@@ -62,16 +60,16 @@ $(() => {
 
         onAddToCart() {
             this.cartItem.packageType = this.$cache.priceList.children('.selected').first().data().package;
+            this.cartItem.delivery = $('input[name="delivery"]:checked').val();
+            this.cartItem.quantity = 1;
+            this.cartItem.book_id = this.$cache.addToCartBtn.data().bookId;
 
-            console.log(this.cartItem);
-            console.log($('input[name="delivery"]:checked').val());
-            // const cartItem = {
-            //     bookPackage:
-            // }
-        }
+            this.$cache.addToCartBtn.prop('disabled', true);
 
-        onBuyItNow() {
-            console.debug('buy item now');
+            $.post('/cart', {data: JSON.stringify(this.cartItem)},()=>{}, "json").always(() => {
+                console.log("done");
+                this.$cache.addToCartBtn.prop('disabled', false);
+            });
         }
 
         onSelectPackageType($el) {
