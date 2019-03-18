@@ -66,8 +66,11 @@ $(() => {
 
             this.$cache.addToCartBtn.prop('disabled', true);
 
-            $.post('/cart', {data: JSON.stringify(this.cartItem)},()=>{}, "json").always(() => {
-                console.log("done");
+            $.post('/cart', {data: JSON.stringify(this.cartItem)},()=>{}, "json")
+                .done(()=>{
+                    // @todo make a method call to increment to the cart items count
+                })
+                .always(() => {
                 this.$cache.addToCartBtn.prop('disabled', false);
             });
         }

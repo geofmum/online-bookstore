@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 @WebServlet(name = "BaseController")
 public abstract class BaseController extends HttpServlet {
     protected ObjectMapper mapper = new ObjectMapper();
+    String[] category;
 
     @Override
     public void init() throws ServletException {
@@ -29,6 +30,8 @@ public abstract class BaseController extends HttpServlet {
 
         Database.INSTANCE.initialize(rootDir + "/app.db");
         DatabaseFixtures.INSTANCE.initialize();
+
+        category = new String[]{"Best Seller", "Drama", "Fantasy", "Romance", "Science"};
     }
 
     @Override
@@ -37,6 +40,7 @@ public abstract class BaseController extends HttpServlet {
         registerScripts(req);
 
         super.service(req, resp);
+
     }
 
     protected String getProjectRootDir() {
@@ -50,19 +54,19 @@ public abstract class BaseController extends HttpServlet {
         return rootDir;
     }
 
-    protected List<String> getStyles(){
+    protected List<String> getStyles() {
         return new ArrayList<>();
     }
 
-    protected List<String> getScripts(){
+    protected List<String> getScripts() {
         return new ArrayList<>();
     }
 
-    protected void registerStyles(HttpServletRequest req){
+    protected void registerStyles(HttpServletRequest req) {
         req.setAttribute("styles", getStyles());
     }
 
-    protected void  registerScripts(HttpServletRequest req){
+    protected void registerScripts(HttpServletRequest req) {
         req.setAttribute("scripts", getScripts());
     }
 

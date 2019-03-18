@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
+import java.text.DecimalFormat;
 import java.util.List;
 
 @Entity
@@ -102,5 +103,11 @@ public class Book extends BaseModel {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String computeDiscountedPrice(){
+        DecimalFormat df2 = new DecimalFormat(".##");
+        double discountedValue=price-(price*discount/100);
+        return df2.format(discountedValue);
     }
 }
