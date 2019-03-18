@@ -30,6 +30,7 @@ public class BookDetailsController extends BaseController {
         String bookId = request.getParameter("id");
         int id = bookId != null ? Integer.valueOf(bookId) : 0;
 
+        request.setAttribute("category", category);
         Book book = new QBook().id.eq(id)
 //                .fetch("authors")
 //                .fetch("publishers")

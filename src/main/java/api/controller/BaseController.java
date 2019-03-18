@@ -16,6 +16,7 @@ import java.util.List;
 
 @WebServlet(name = "BaseController")
 public abstract class BaseController extends HttpServlet {
+    String[] category;
     @Override
     public void init() throws ServletException {
         super.init();
@@ -24,6 +25,7 @@ public abstract class BaseController extends HttpServlet {
 
         Database.INSTANCE.initialize(rootDir + "/app.db");
        // DatabaseFixtures.INSTANCE.initialize();
+        category=new String[]{"Best Seller","Drama","Fantasy","Romance","Science"};
     }
 
     @Override
@@ -32,6 +34,7 @@ public abstract class BaseController extends HttpServlet {
         registerScripts(req);
 
         super.service(req, resp);
+
     }
 
     protected String getProjectRootDir() {

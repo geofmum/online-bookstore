@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <main  class="container">
 
     <div class="banner">
@@ -9,14 +10,14 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
 
-                    <p>“I do believe something very magical can happen when you read a book.” – <strong>J.K. Rowling</strong></p>
+                    <p><q>I do believe something very magical can happen when you read a book.</q> &#8208; <strong>J.K. Rowling</strong></p>
 
                 </div>
                 <div class="carousel-item">
-                    <p>“Books are mirrors: you only see in them what you already have inside you.” –  <strong>Carlos Ruiz Zafón</strong></p>
+                    <p><q>Books are mirrors: you only see in them what you already have inside you.</q> &#8208; <strong>Carlos Ruiz Zafón</strong></p>
                 </div>
                 <div class="carousel-item">
-                    <p>“A room without books is like a body without a soul.” – <strong>Cicero </strong></p>
+                    <p><q>A room without books is like a body without a soul.</q> &#8208; <strong>Cicero </strong></p>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#myCarouselBanner" role="button" data-slide="prev">
@@ -33,22 +34,22 @@
 
 
     <div class="bookdetails">
-        <h4 class="text-info underline">Best Seller <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <h4 class="text-info underline">Best Seller <a href="category?c=1" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
             <c:forEach items="${books}" var="book">
             <div class="col-md-3">
                 <div class="book">
                     <div class="book-img">
                         <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-                        <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}" />
-                        <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                        <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
+                        <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
                     </div>
                     <div class="book-body">
                         <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
                         <p class="book-text">${book.description}<br>
-                            <span class="text-danger">$${discountedPrice}</span>
-                            <c:if test="${book.discount != discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
-                        <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                            <span class="text-danger">$${book.computeDiscountedPrice()}</span>
+                            <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
+                        <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
                     </div>
                 </div>
             </div>
@@ -57,24 +58,22 @@
     </div>
 
     <div class="bookdetails">
-        <h4 class="text-info underline">Romance Books <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <h4 class="text-info underline">Romance Books <a href="category?c=4" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
             <c:forEach items="${romanceBooks}" var="book">
-
                 <div class="col-md-3">
                     <div class="book">
                         <div class="book-img">
                             <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}" />
-                            <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
+                            <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
                         </div>
                         <div class="book-body">
                             <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
                             <p class="book-text">${book.description}<br>
-                                <span class="text-danger">$${discountedPrice}</span>
-                                <c:if test="${book.discount != discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
-                            </p>
-                            <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                                <span class="text-danger">$${book.computeDiscountedPrice()}</span>
+                                <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
+                            <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -83,21 +82,22 @@
     </div>
 
     <div class="bookdetails">
-        <h4 class="text-info underline">Fantasy Books <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <h4 class="text-info underline">Fantasy Books <a href="category?c=3" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
             <c:forEach items="${FantasyBooks}" var="book">
                 <div class="col-md-3">
                     <div class="book">
                         <div class="book-img">
                             <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-
-                            <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
+                            <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
                         </div>
                         <div class="book-body">
                             <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
                             <p class="book-text">${book.description}<br>
-                                <span class="text-danger">$${book.price}</span> <strike>$200</strike> </p>
-                            <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                                <span class="text-danger">$${book.computeDiscountedPrice()}</span>
+                                <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
+                            <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -106,21 +106,23 @@
         </div>
     </div>
     <div class="bookdetails">
-        <h4 class="text-info underline">Fantasy Books <a href="" class="float-right font-italic showall">Show all >></a></h4>
+        <h4 class="text-info underline">Drama Books <a href="category?c=2" class="float-right font-italic showall">Show all >></a></h4>
         <div class="row">
             <c:forEach items="${DramaBooks}" var="book">
                 <div class="col-md-3">
                     <div class="book">
                         <div class="book-img">
                             <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
 
-                            <img src="${book.thumb_url}" class="center"  height="200" alt="">
+                            <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
                         </div>
                         <div class="book-body">
                             <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
                             <p class="book-text">${book.description}<br>
-                                <span class="text-danger">$${book.price}</span> <strike>$200</strike> </p>
-                            <a href="#" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+                                <span class="text-danger">$${book.computeDiscountedPrice()}</span>
+                                <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
+                            <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -141,21 +143,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="rounded-circle" src="resources/images/testi1.jpg" alt="First slide">
-                    <p>“Now two or three times a year (especially after Christmas) my family shops on<br>
-                        the Bookshelf – it’s a tradition!”</p>
-                    <p class="font-italic">- Sarah Jefferson</p>
+                    <p><q>Now two or three times a year (especially after Christmas) my family shops on<br>
+                        the Bookshelf &#8208; it's a tradition!</q> </p>
+                    <p class="font-italic">&#8208; Sarah Jefferson</p>
                 </div>
                 <div class="carousel-item">
                     <img class="rounded-circle" src="resources/images/testi2.jpg" alt="Second slide">
-                    <p>“Now two or three times a year (especially after Christmas) my family shops on<br>
-                        the Bookshelf – it’s a tradition!”</p>
-                    <p class="font-italic">- Mike Haferson</p>
+                    <p><q> three times a year (especially after Christmas) my family shops on<br>
+                        the Bookshelf Now two or!</q></p>
+                    <p class="font-italic">&#8208; Mike Haferson</p>
                 </div>
                 <div class="carousel-item">
                     <img class="rounded-circle" src="resources/images/testi3.jpg" alt="Third slide">
-                    <p>“Now two or three times a year (especially after Christmas) my family shops on<br>
-                        the Bookshelf – it’s a tradition!”</p>
-                    <p class="font-italic">- Nathan Burns</p>
+                    <p><q>Now two or three times a year (especially after Christmas) my family shops on<br>
+                        the Bookshelf  tradition!</q></p>
+                    <p class="font-italic">&#8208; Nathan Burns</p>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">

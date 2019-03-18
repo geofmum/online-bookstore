@@ -18,6 +18,8 @@ public class IndexController extends BaseController {
         List<Book> FantasyBooks = new QBook().where().category.eq("Fantasy").setMaxRows(4).findList();
         List<Book> DramaBooks = new QBook().where().category.eq("Drama").setMaxRows(4).findList();
         System.out.println(romanceBooks.size());
+
+        req.setAttribute("category", category);
         req.setAttribute("books",books);
         req.setAttribute("romanceBooks",romanceBooks);
         req.setAttribute("FantasyBooks",FantasyBooks);
