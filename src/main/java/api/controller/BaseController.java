@@ -30,7 +30,6 @@ public abstract class BaseController extends HttpServlet {
 
         Database.INSTANCE.initialize(rootDir + "/app.db");
         DatabaseFixtures.INSTANCE.initialize();
-
         category = new String[]{"Best Seller", "Drama", "Fantasy", "Romance", "Science"};
     }
 

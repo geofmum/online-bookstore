@@ -14,7 +14,7 @@
 
                 </div>
                 <div class="carousel-item">
-                    <p><q>Books are mirrors: you only see in them what you already have inside you.</q> &#8208; <strong>Carlos Ruiz Zafón</strong></p>
+                    <p><q>Books are mirrors: you only see in them what you already have inside you.</q> &#8208; <strong>Carlos Ruiz Zafon</strong></p>
                 </div>
                 <div class="carousel-item">
                     <p><q>A room without books is like a body without a soul.</q> &#8208; <strong>Cicero </strong></p>
@@ -39,19 +39,19 @@
             <c:forEach items="${books}" var="book">
             <div class="col-md-3">
                 <div class="book">
-                    <div class="book-img">
-                        <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-                        <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
-                        <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
-                    </div>
-                    <div class="book-body">
-                        <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
-                        <p class="book-text">${book.description}<br>
-                            <span class="text-danger">$${book.computeDiscountedPrice()}</span>
-                            <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
-                        <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                    </div>
-                </div>
+						<div class="book-img">
+							<c:if test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+							
+							<a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
+						</div>
+						<div class="book-body">
+							<h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+							<p class="book-text">${book.computeDescription()}<br>
+								<span class="text-danger">$${book.computeDiscountedPrice()}</span>
+								<c:if test="${book.price ne book.computeDiscountedPrice()}"><strike>$${book.price}</strike></c:if> </p>
+							<a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+						</div>
+					</div>
             </div>
             </c:forEach>
         </div>
@@ -63,19 +63,19 @@
             <c:forEach items="${romanceBooks}" var="book">
                 <div class="col-md-3">
                     <div class="book">
-                        <div class="book-img">
-                            <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
-                            <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
-                        </div>
-                        <div class="book-body">
-                            <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
-                            <p class="book-text">${book.description}<br>
-                                <span class="text-danger">$${book.computeDiscountedPrice()}</span>
-                                <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
-                            <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                        </div>
-                    </div>
+						<div class="book-img">
+							<c:if test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+							
+							<a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
+						</div>
+						<div class="book-body">
+							<h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+							<p class="book-text">${book.computeDescription()}<br>
+								<span class="text-danger">$${book.computeDiscountedPrice()}</span>
+								<c:if test="${book.price ne book.computeDiscountedPrice()}"><strike>$${book.price}</strike></c:if> </p>
+							<a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+						</div>
+					</div>
                 </div>
             </c:forEach>
         </div>
@@ -87,19 +87,19 @@
             <c:forEach items="${FantasyBooks}" var="book">
                 <div class="col-md-3">
                     <div class="book">
-                        <div class="book-img">
-                            <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
-                            <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
-                        </div>
-                        <div class="book-body">
-                            <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
-                            <p class="book-text">${book.description}<br>
-                                <span class="text-danger">$${book.computeDiscountedPrice()}</span>
-                                <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
-                            <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                        </div>
-                    </div>
+						<div class="book-img">
+							<c:if test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+							
+							<a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
+						</div>
+						<div class="book-body">
+							<h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+							<p class="book-text">${book.computeDescription()}<br>
+								<span class="text-danger">$${book.computeDiscountedPrice()}</span>
+								<c:if test="${book.price ne book.computeDiscountedPrice()}"><strike>$${book.price}</strike></c:if> </p>
+							<a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+						</div>
+					</div>
                 </div>
             </c:forEach>
 
@@ -111,20 +111,19 @@
             <c:forEach items="${DramaBooks}" var="book">
                 <div class="col-md-3">
                     <div class="book">
-                        <div class="book-img">
-                            <c:if  test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
-                            <c:set var="discountedPrice" value="#{book.price-(book.price*book.discount/100)}"  />
-
-                            <a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
-                        </div>
-                        <div class="book-body">
-                            <h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
-                            <p class="book-text">${book.description}<br>
-                                <span class="text-danger">$${book.computeDiscountedPrice()}</span>
-                                <c:if test="${book.price ne discountedPrice}"><strike>$${book.price}</strike></c:if> </p>
-                            <a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
-                        </div>
-                    </div>
+						<div class="book-img">
+							<c:if test="${book.discount != 0}"><span>Save ${book.discount}%</span></c:if>
+							
+							<a href="book-details?id=${book.id}"><img src="${book.thumb_url}" class="center"  height="200" alt=""></a>
+						</div>
+						<div class="book-body">
+							<h5 class="book-title"><a href="book-details?id=${book.id}">${book.title}</a> </h5>
+							<p class="book-text">${book.computeDescription()}<br>
+								<span class="text-danger">$${book.computeDiscountedPrice()}</span>
+								<c:if test="${book.price ne book.computeDiscountedPrice()}"><strike>$${book.price}</strike></c:if> </p>
+							<a href="book-details?id=${book.id}" class="btn btn-warning btn-sm"><i class="fas fa-shopping-cart"></i> Add to cart</a>
+						</div>
+					</div>
                 </div>
             </c:forEach>
 

@@ -15,7 +15,8 @@ public enum  UserFixtures {
             User user = new User();
 
             user.setName("user-" + randInt);
-            user.setPassword("password-" + randInt);
+            user.setPassword("password");
+            user.setEmail("mse"+(i)+"@mum.edu");
             user.setProfile_pic("pic-" + randInt);
 
             user.save();
