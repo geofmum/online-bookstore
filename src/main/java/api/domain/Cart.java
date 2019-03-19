@@ -11,15 +11,17 @@ import java.util.List;
 @Table(name = "cart")
 public class Cart extends BaseModel {
     @OneToOne
-    @JsonIgnoreProperties
     User user;
 
-    @OneToMany(mappedBy = "cart")
-    @JsonIgnoreProperties
+    @OneToMany(mappedBy = "cart", fetch = FetchType.EAGER)
     List<CartItem> cart_items;
 
     boolean status;
     double total;
+
+    public void setCart_items(List<CartItem> cart_items) {
+        this.cart_items = cart_items;
+    }
 
     public User getUser() {
         return user;
@@ -34,7 +36,38 @@ public class Cart extends BaseModel {
     }
 
     public void addCart_items(CartItem cart_item) {
-        this.cart_items.add(cart_item);
+        CartItem _cartItem = getCartItemById(cart_item.getId());
+
+        if (_cartItem != null) {
+            _cartItem.inrementQuantity(cart_item.getQuantity());
+            _cartItem.save();
+        } else {
+            cart_items.add(cart_item);
+        }
+
+        computeCartTotal();
+    }
+
+    protected void computeCartTotal(){
+         total = cart_items.stream().mapToDouble(item -> item.getQuantity() * item.book.getPrice()).sum();
+//         try {
+//             save();
+//         } catch (Exception e){}
+    }
+
+    protected CartItem getCartItemById(long cartItemId) {
+        return cart_items
+                .stream()
+                .filter(item -> item.getId() == cartItemId)
+                .findFirst().orElse(null);
+    }
+
+    protected boolean hasCartItem(long id) {
+        for (CartItem item : cart_items) {
+            if (item.getId() == id) return true;
+        }
+
+        return false;
     }
 
     public boolean isStatus() {

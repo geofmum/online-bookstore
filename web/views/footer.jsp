@@ -38,8 +38,13 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 <script src="resources/js/script.js"></script>
 <script src="resources/js/sign-up.js"></script>
+=======
+<script src="/resources/js/script.js"></script>
+
+>>>>>>> a767a552234da8bffe1ea6ffd171cbd767accbee
 <c:forEach items="${scripts}" var="script">
     <script src="${script}"></script>
 </c:forEach>

@@ -110,4 +110,8 @@ public class Book extends BaseModel {
         double discountedValue=price-(price*discount/100);
         return df2.format(discountedValue);
     }
+    public String computeDescription(){
+        if(description.length()>46) return description.substring(0,45)+"...";
+        return description;
+    }
 }

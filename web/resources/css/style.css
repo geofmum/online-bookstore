@@ -190,3 +190,50 @@ header{
     margin: 0 auto;
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
+=======
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.author{
+    background: #F8F9FA;
+    margin: 20px 0;
+}
+.author ul{
+    margin:10px 10px 0 10px;
+    padding:10px 0 0 10px;
+}
+.author li{
+    list-style:none;
+}
+.author h5.authortitle{
+    padding:10px 0 10px 15px;
+    margin:0 0 10px 0;
+    background:#DADADA;
+}
+.authorname{
+    padding:0 10px  20px 10px;
+}
+.authorbook{
+    border-left: 1px solid #ccc;
+}
+.authorbooks{
+    padding: 5px 20px;
+    position: relative;
+    min-height: 400px;
+}
+#loading{
+    background: url("../images/loading.gif") no-repeat;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top:30%;
+    left:40%;
+    display: none;
+}
+.ajaxChange{
+    font-weight: bold;
+}
+>>>>>>> a767a552234da8bffe1ea6ffd171cbd767accbee

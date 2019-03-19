@@ -10,7 +10,7 @@
             <h2>${book.title}</h2>
             <h3>by <span class="book-author">Michelle Obama</span></h3>
             <hr/>
-            <div class="book-package-type">Hardcover</div>
+            <div id="package-type" class="book-package-type">Hardcover</div>
             <div class="price d-flex align-content-end">
                 <div>
                     <span class="currency-symbol">$</span><span data-quoted-price="${book.price}" id="price-quoted"

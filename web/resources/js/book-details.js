@@ -66,9 +66,9 @@ $(() => {
 
             this.$cache.addToCartBtn.prop('disabled', true);
 
-            $.post('/cart', {data: JSON.stringify(this.cartItem)},()=>{}, "json")
+            $.post('/cart', {data: JSON.stringify(this.cartItem)})
                 .done(()=>{
-                    // @todo make a method call to increment to the cart items count
+                    updateCart()
                 })
                 .always(() => {
                 this.$cache.addToCartBtn.prop('disabled', false);
@@ -77,6 +77,9 @@ $(() => {
 
         onSelectPackageType($el) {
             const packageType = $el.data().package;
+
+            const editedPackageType = packageType.substr(0, 1).toUpperCase() + packageType.substr(1);
+            $('#package-type').text(editedPackageType);
 
             $el.siblings('.selected')
                 .removeClass('selected');
@@ -105,7 +108,7 @@ $(() => {
                 const pricingIndex = that.packageTypePriceIndexes[packageType];
                 const price = pricingIndex * quotedPrice;
 
-                $el.find(".price-value").first().text(price);
+                $el.find(".price-value").first().text(that.round(price,2));
             });
         }
 
