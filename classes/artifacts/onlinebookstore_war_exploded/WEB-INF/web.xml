@@ -85,15 +85,6 @@
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>confirmation</servlet-name>
-        <servlet-class>api.controller.confirmation</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>confirmation</servlet-name>
-        <url-pattern>/confirmation</url-pattern>
-    </servlet-mapping>
-
 
     <!--Filters -->
     <filter>

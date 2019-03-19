@@ -70,10 +70,21 @@
         <servlet-name>bookdetails</servlet-name>
         <servlet-class>api.controller.BookDetailsController</servlet-class>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>bookdetails</servlet-name>
         <url-pattern>/book-details</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>api.controller.LogOutController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
 
     <!--Filters -->
     <filter>
@@ -84,4 +95,6 @@
         <filter-name>AuthFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+
 </web-app>
