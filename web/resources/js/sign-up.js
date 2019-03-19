@@ -7,7 +7,7 @@
 })();
 
 $('#signup').click(function(){
-
+    var myForm = $('#myForm');
     const user = {
         name: $("#name").val(),
         email: $("#email").val(),
@@ -22,17 +22,19 @@ $('#signup').click(function(){
         state: $("#state").val(),
         zipcode: $("#zip").val()
     };
-
-   $.ajax({
-        "url":"/ajaxAuth",
-        "type":"POST",
-        "data":{user: JSON.stringify(user), address: JSON.stringify(address)},
-        "success": function(response) {
-            if(response=="success") location.href="/";
-            else
-            alert(response);
-        }
-    });
-
-    return false;
+    console.log(myForm[0].checkValidity());
+   if( myForm[0].checkValidity()==true) {
+       $.ajax({
+           "url": "/ajaxAuth",
+           "type": "POST",
+           "data": {user: JSON.stringify(user), address: JSON.stringify(address)},
+           "success": function (response) {
+               if (response == "success") location.href = "/";
+               else
+                   alert(response);
+           }
+       });
+   }
+   else alert("Please submit required fields!");
+    //return false;
 });

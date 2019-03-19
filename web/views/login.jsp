@@ -7,7 +7,10 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:include page='header.jsp'></jsp:include>
-<div class="container signup">
+<div class="container signup signin">
+    <div class="alert alert-info" role="alert">
+        Please Login
+    </div>
     <form method="post">
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -22,6 +25,9 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
+        <div class="form-group" style="padding-top: 15px">
         <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
     </form>
+</div>
     <jsp:include page='footer.jsp'></jsp:include>

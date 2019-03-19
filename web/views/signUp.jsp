@@ -10,25 +10,25 @@
             Signup
         </div>
 
-        <form  method="post">
+        <form  method="post" id="myForm">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="name">Name</label>
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required />
                 </div>
                 <div class="form-group col-md-6">
                     <label for="email">Email</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required />
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone Number">
+                    <input type="tel" name="phone" class="form-control" id="phone" placeholder="Phone Number" />
                 </div>
                 <div class="form-group col-md-6">
                     <label for="pass">Password</label>
-                    <input type="password" name="pass" class="form-control" id="pass" placeholder="Password" required>
+                    <input type="password" name="pass" class="form-control" id="pass" placeholder="Password" required />
                 </div>
             </div>
             <div class="form-group">
@@ -61,7 +61,7 @@
                     </label>
                 </div>
             </div>
-            <button type="submit" id="signup" class="btn btn-primary">Sign up</button>
+            <button type="button" id="signup" class="btn btn-primary">Sign up</button>
         </form>
     </div>
 

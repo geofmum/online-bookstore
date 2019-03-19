@@ -236,4 +236,8 @@ header{
 .ajaxChange{
     font-weight: bold;
 }
->>>>>>> a767a552234da8bffe1ea6ffd171cbd767accbee
+.signin{
+    margin: 50px auto 40px auto;
+    width: 600px;
+
+}
