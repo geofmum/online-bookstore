@@ -38,7 +38,7 @@ public class AuthenticationFilter implements javax.servlet.Filter {
             if (Arrays.binarySearch(new String[]{"PUT", "DELETE"}, Method) >= 0 ) {
                 response.setStatus(401);
             } else {
-                request.getRequestDispatcher("views/login.jsp").forward(req, resp);
+                response.sendRedirect("/login");
             }
         }
     }
