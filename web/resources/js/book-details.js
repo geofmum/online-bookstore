@@ -66,8 +66,10 @@ $(() => {
 
             this.$cache.addToCartBtn.prop('disabled', true);
 
-            $.post('/cart', {data: JSON.stringify(this.cartItem)},()=>{}, "json")
-                .done(()=>updateCart(1))
+            $.post('/cart', {data: JSON.stringify(this.cartItem)})
+                .done(()=>{
+                    updateCart()
+                })
                 .always(() => {
                 this.$cache.addToCartBtn.prop('disabled', false);
             });

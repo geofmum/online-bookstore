@@ -31,18 +31,19 @@
                 <div class="float-right">
                     <%--<% String userName=session.getAttribute("uname").toString();%>--%>
                     <c:choose>
-                    <c:when test="${user!=null}">
-                        <a class="cart" href="/cart"><span class="fas fa-shopping-cart"></span> <c:if
-                                test="${cartTotalItems != null || cartTotalItems > 0}"><span class="items">${cartTotalItems}</span></c:if></a>
-                        <a class="btn btn-warning" href="logout"><i class="fas fa-user"></i> Logout</a>
-                        <span class="userpadding"><em class="fas fa-user"></em>${user}</span>
-                    </c:when>
-                    <c:when test="${user==null}">
-                        <a class="cart" href="/cart"><span class="fas fa-shopping-cart"></span> <c:if
-                                test="${cartTotalItems != null || cartTotalItems > 0}"><span class="items">${cartTotalItems}</span></c:if></a>
-                        <a class="btn btn-warning" href="login"><i class="fas fa-user"></i> Login</a>
-                        <a class="btn btn-warning" href="signup"><i class="fas fa-user-plus"></i> Sign up</a>
-                    </c:when>
+                        <c:when test="${user!=null}">
+                            <a class="cart" href="/cart"><span class="fas fa-shopping-cart"></span> ><span
+                                    id="shoppingItems" class="items">${cartTotalItems}</span></a>
+                            <a class="btn btn-warning" href="logout"><i class="fas fa-user"></i> Logout</a>
+                            <span class="userpadding"><em class="fas fa-user"></em>${user}</span>
+                        </c:when>
+                        <c:when test="${user==null}">
+                            <a class="cart" href="/cart"><span class="fas fa-shopping-cart"></span> <span
+                                    id="shoppingItems"
+                                    class="items">${cartTotalItems}</span></a>
+                            <a class="btn btn-warning" href="login"><i class="fas fa-user"></i> Login</a>
+                            <a class="btn btn-warning" href="signup"><i class="fas fa-user-plus"></i> Sign up</a>
+                        </c:when>
                     </c:choose>
                 </div>
             </div>

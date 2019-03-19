@@ -76,9 +76,10 @@ public class CartController extends BaseController {
         PrintWriter out = resp.getWriter();
 
         try {
+            resp.setContentType("text/html");
             out.print(mapper.writeValueAsString(cartItem));
         } catch (JsonGenerationException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
     }
 

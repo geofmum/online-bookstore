@@ -38,7 +38,7 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="resources/js/script.js"></script>
+<script src="/resources/js/script.js"></script>
 
 <c:forEach items="${scripts}" var="script">
     <script src="${script}"></script>
