@@ -2,24 +2,44 @@ package api.filters;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Arrays;
+import java.util.*;
 
 public class AuthenticationFilter implements javax.servlet.Filter {
-    protected String[] unrestrictedRoutes = {"/", "/login", "/logout"};
+    protected String Method = "GET";
+    protected Map<String, ArrayList<String>> restrictedRoutes = new HashMap<String, ArrayList<String>>(){{
+        put("GET", new ArrayList<String>(){{
+            add("/cart");
+        }});
+        put("POST", new ArrayList<String>());
+        put("PUT", new ArrayList<String>(){{
+            add("/cart");
+        }});
+        put("DELETE", new ArrayList<String>());
+        put("ALL", new ArrayList<String>());
+    }};
 
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
         HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) resp;
+
         HttpSession session = request.getSession();
+
+        Method = request.getMethod().toUpperCase();
 
         if (!isRestrictedRoute(getRequestUrl(request)) || isAuthenticated(session)) {
             chain.doFilter(req, resp);
         } else {
-            request.getRequestDispatcher("views/login.jsp").forward(req, resp);
+            if (Arrays.binarySearch(new String[]{"PUT", "DELETE"}, Method) >= 0 ) {
+                response.setStatus(401);
+            } else {
+                request.getRequestDispatcher("views/login.jsp").forward(req, resp);
+            }
         }
     }
 
@@ -31,14 +51,13 @@ public class AuthenticationFilter implements javax.servlet.Filter {
     }
 
     protected String getRequestUrl(HttpServletRequest req) {
-        String url = req.getRequestURL().toString();
-
+        String url = req.getRequestURI().substring(req.getContextPath().length());
         return url;
     }
 
     protected boolean isRestrictedRoute(String route) {
-        int index = Arrays.binarySearch(unrestrictedRoutes, route);
+        List<String> _restrictedRoutes = restrictedRoutes.get(Method);
 
-        return index >= 0;
+        return _restrictedRoutes.contains(route) || restrictedRoutes.get("ALL").contains(route);
     }
 }

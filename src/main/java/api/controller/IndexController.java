@@ -1,7 +1,9 @@
 package api.controller;
 
 import api.domain.Book;
+import api.domain.Cart;
 import api.domain.query.QBook;
+import api.domain.query.QCart;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -12,7 +14,7 @@ import java.util.List;
 public class IndexController extends BaseController {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       // new
+        // new
         List<Book> books = new QBook().setMaxRows(4).findList();
         List<Book> romanceBooks = new QBook().where().category.eq("Romance").setMaxRows(4).findList();
         List<Book> FantasyBooks = new QBook().where().category.eq("Fantasy").setMaxRows(4).findList();
@@ -20,10 +22,10 @@ public class IndexController extends BaseController {
         System.out.println(romanceBooks.size());
 
         req.setAttribute("category", category);
-        req.setAttribute("books",books);
-        req.setAttribute("romanceBooks",romanceBooks);
-        req.setAttribute("FantasyBooks",FantasyBooks);
-        req.setAttribute("DramaBooks",DramaBooks);
+        req.setAttribute("books", books);
+        req.setAttribute("romanceBooks", romanceBooks);
+        req.setAttribute("FantasyBooks", FantasyBooks);
+        req.setAttribute("DramaBooks", DramaBooks);
         req.getRequestDispatcher("views/index.jsp").forward(req, resp);
     }
 }

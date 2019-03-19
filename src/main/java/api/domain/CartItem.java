@@ -1,14 +1,14 @@
 package api.domain;
 
 import api.domain.query.QBook;
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "cart_item")
+@Table(name = "cart_item",
+        uniqueConstraints = @UniqueConstraint(columnNames = {"cart_id", "book_id", "user_id"})
+)
 public class CartItem extends BaseModel {
     int quantity;
     String delivery;
@@ -86,5 +86,11 @@ public class CartItem extends BaseModel {
             return 0;
 
         return book.getId();
+    }
+
+    public void inrementQuantity (Integer quantity) {
+        quantity = quantity == null ? 1 : quantity;
+
+        this.quantity += quantity;
     }
 }
