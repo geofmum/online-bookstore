@@ -33,7 +33,7 @@
                     <c:when test="${user!=null}">
                         <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span id="shoppingItems1" class="items">0</span></a>
                         <a class="btn btn-warning" href="logout"><i class="fas fa-user"></i> Logout</a>
-                        <span class="userpadding"><em class="fas fa-user"></em>${user}</span>
+                        <span ><em class="fas fa-user"></em>${user}</span>
                     </c:when>
                     <c:when test="${user==null}">
                         <a class="cart" href="/"><span class="fas fa-shopping-cart"></span> <span id="shoppingItems" class="items">0</span></a>
